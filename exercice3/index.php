@@ -1,5 +1,5 @@
 <?php
-    $admin = 'user';
+    $admin = FALSE;
 
 ?>
 <!DOCTYPE html>
@@ -21,7 +21,7 @@
 <?php
 
 
-if ($admin === 'admin'){
+if ($admin === TRUE){
     echo 'Bienvenue cher Admin';
     echo '<br>';
     echo '<a href="#"> Rejoins-nous </a>';
