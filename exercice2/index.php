@@ -1,6 +1,7 @@
 <?php
 
-        $color = 'blue'
+        $color = 'red';
+        $name = 'Teddy';
 
 ?>
 <!DOCTYPE html>
@@ -16,10 +17,8 @@
     </style>
 </head>
 <body>
-    <?php
-        $name = 'Teddy';
-        echo '<h1> Salutations '. $name .'!</h1>';
 
-    ?>
+    <h1>Salutations Mon Cher <?php echo $name ;?></h1>
+
 </body>
 </html>
