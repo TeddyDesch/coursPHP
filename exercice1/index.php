@@ -11,13 +11,15 @@
 
     <?php
 
-        echo '<ul>
-            <li>bananes</li>
-            <li>fraises</li>
-            <li>pommes</li>
-            <li>framboises</li>
-            <li>raisin</li>
-            </ul>';
+        echo '
+        <ul>
+            <li>Poires</li>
+            <li>Bananes</li>
+            <li>Pommes</li>
+            <li>Fraises</li>
+            <li>Framboises</li>
+        </ul>'
+        ;
     ?>
 
 </body>
