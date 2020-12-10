@@ -1,6 +1,3 @@
-<?php
-    $i = 0;
-?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -10,15 +7,16 @@
 </head>
 <body>
     <?php
+    $i = 0;
+
     echo '<ul>';
     while($i < 5000){
+
         echo '<li> ligne N° '.($i+1).'</li>';
+
         $i++;
     }
-
-
     echo '</ul>';
-
     ?>
 </body>
 </html>
