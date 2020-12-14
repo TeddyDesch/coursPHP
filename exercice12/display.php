@@ -9,8 +9,8 @@
 
     <?php
         if (isset($_GET['firstname']) && isset($_GET['email'])){
-            echo 'Bonjour '. $_GET['firstname']. '<br>';
-            echo 'Ton adresse email est ' . $_GET['email']. ' !';
+            echo 'Bonjour '. htmlspecialchars($_GET['firstname']). '<br>';
+            echo 'Ton adresse email est ' . htmlspecialchars($_GET['email']). ' !';
         }
         else{
             echo 'Veuillez passer par le formulaire';
