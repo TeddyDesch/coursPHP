@@ -12,15 +12,17 @@
 
 //echo strtotime('1990-09-20 00:30');
 
-//Exercice 10-d Crer une variable contenant cette date precise texteulle '2004-04-16 12:00:00" Le but est d'ajouter 435 jours à cette date puis de l'ajouetr sous le format suivant ' samedi 25 juin 2005, 06h 00m 00s".
+//Exercice 10-d Crer une variable contenant cette date precise texteulle '2004-04-16 12:00:00" Le but est d'ajouter 435 jours à cette date puis de l'ajouetr sous le format suivant ' samedi 25 juin 2005, 12h 00m 00s".
 
 
-$dateToTransfrom = '2004-04-16 06:00:00';
+$dateToTransfrom = '2004-04-16 12:00:00';
 $codeTime = strtotime($dateToTransfrom);
 $codeTransform = $codeTime + 435*24*60*60;
 
 
 setlocale(LC_TIME, "fr_FR.utf8",'fra');
 echo strftime('%A %d %B %Y, %Hh %Mm %Ss', $codeTransform);
+echo ('<br>');
+echo strtotime('1990-11-07 17:00:00')
 
 ?>
