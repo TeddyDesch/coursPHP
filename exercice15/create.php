@@ -1,11 +1,15 @@
 <?php
+    //on lance le cookie de session
     session_start();
 
-    if(isset($_SESSION['firstname']) && isset($_SESSION['lastname'])){
+    //on verifie si les session existent deja
+    if(isset($_SESSION['user'])) {
         $error = 'Les variables existe déja';
-    }else {
-        $_SESSION['firstname'] = 'alice';
-        $_SESSION['lastname'] = 'BOB';
+    }else {//sinon on les créés avec petit message qui va bien
+        $_SESSION['user'] = [
+            'firstname' => 'alice',
+            'lastname' => 'BOB',
+        ];
         $success = 'Les variables sont bien créées !';
     }
 ?>
@@ -21,6 +25,8 @@
     <h1>Page Create</h1>
     <?php include 'menu.php'; ?>
     <?php
+
+    //on affiche les message créés auparavant
     if(isset($error)){
         echo '<p style="color:red;">'.$error.'</p>';
     }

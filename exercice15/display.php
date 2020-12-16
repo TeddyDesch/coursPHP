@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-if(isset($_SESSION['firstname']) && isset($_SESSION['lastname'])){
-    $hello = 'Bonjour ' . $_SESSION['firstname'].' '. $_SESSION['lastname'].'!';
+if(isset($_SESSION['user'])) {
+    $hello = 'Bonjour ' . $_SESSION['user']['firstname'].' '. $_SESSION['user']['lastname'].'!';
 }
 
 ?>
